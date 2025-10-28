@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Call of Duty</title>
+  
+  <link rel="icon" type="image/png" href="/file_00000000033c620696201117dd849825.png">
+  
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      padding: 0;
+      line-height: 1.6;
+      background-color: #f9f9f9;
+      color: #222;
+    }
+
+    .header {
+      background-color: #2b2b2b;
+      color: white;
+      padding: 20px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .menu-btn {
+      font-size: 50px;
+      cursor: pointer;
+    }
+
+    .title {
+      font-weight: bold;
+      font-size: 40px;
+      text-transform: uppercase;
+      text-align: center;
+      line-height: 1.2;
+      flex-grow: 1;
+    }
+
+    .menu {
+      position: absolute;
+      top: 60px;
+      left: 20px;
+      background-color: #444;
+      padding: 10px;
+      border-radius: 8px;
+    }
+
+    .menu a {
+      display: block;
+      color: white;
+      padding: 10px;
+      border-radius: 5px;
+    }
+
+    .menu a:hover {
+      background-color: #666;
+    }
+
+    section {
+      padding: 20px;
+      max-width: 900px;
+      margin: auto;
+    }
+
+    h2 {
+      font-size: 3rem;
+      margin-top: 30px;
+      margin-bottom: 10px;
+    }
+
+    p {
+      font-size: 1rem;
+      margin-bottom: 15px;
+    }
+
+    .image-box {
+      text-align: center;
+      margin: 20px 0;
+    }
+
+    .image-box img {
+      max-width: 100%;
+      border-radius: 8px;
+    }
+
+    strong {
+      font-weight: bold;
+    }
+
+    
+  </style>
+</head>
+<body>
+
+  <div class="header">
+    <div class="menu-btn" id="menuBtn">&#9776;</div>
+
+    <div class="title">
+      CALL OF DUTY<br>
+      MOBILE
+    </div>
+
+    <div class="menu" id="menu">
+      <a href="index.html">Home</a>
+      
+      <a href="aim.html">Tips & Advice</a>
+      
+      
+      <a href="loadout.html">Loadout Suggestions</a>
+    </div>
+  </div>
+
+  <script>
+    const menuBtn = document.getElementById("menuBtn");
+    const menu = document.getElementById("menu");
+
+    menuBtn.addEventListener("click", function() {
+      if (menu.style.display === "block") {
+        menu.style.display = "none";
+      } else {
+        menu.style.display = "block";
+      }
+    })
+  </script>
+  <body>
+
+  <section>
+    <h2>What is call of duty?</h2>
+    <p>
+      <em>Call of Duty</em> is a first-person shooter military video game series and media franchise 
+      published by Activision, starting in 2003. The games were first developed by Infinity Ward, 
+      then by Treyarch and Sledgehammer Games. Several spin-off and handheld games were made by other developers.
+    </p>
+
+    <h2>How to sign up?</h2>
+    <div class="image-box">
+      <img src="Screenshot_20250912-194906.jpg" alt="Call of Duty Mobile Sign Up">
+    </div>
+    <p>
+      First, choose one of the three options: Guest, Garena, or Facebook. 
+      The Guest option is not recommended because once you delete Call of Duty: Mobile, your account will be lost as well. 
+      You can choose either Garena or Facebook. Most people use Facebook, but you can also use Garena. 
+      Just sign up at the Garena Account Center through Google, then open the CODM app again and log in.
+    </p>
+
+    <h2>Cellphone specs suggestions</h2>
+    <p>
+      For a smooth Call of Duty: Mobile experience, you need a phone with a 
+      <strong>high-performance processor (like a modern Snapdragon or RedMagic chip), at least 6-8 GB of RAM, and a 90Hz or higher display</strong> for optimal frame rates and responsiveness. 
+      A good cooling system is also essential for sustained performance during long gaming sessions.
+    </p>
+  </section>
+
+</body>
+</html>
