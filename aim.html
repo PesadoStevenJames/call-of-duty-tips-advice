@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Call of Duty</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #000;
+      color: #fff;
+      line-height: 1.6;
+      padding: 0;
+      background-image: url('/d642dea47110a2e2f90843a0587b3dfe.jpg');
+      background-size: cover;
+      background-position: center;
+      height: 100vh;
+    }
+
+    .header {
+      background-color: #2b2b2b;
+      color: white;
+      padding: 20px;
+      display: flex;
+  
+      align-items: center;
+    }
+
+    .menu-btn {
+      font-size: 50px;
+      cursor: pointer;
+    }
+
+    .title {
+      font-weight: bold;
+      font-size: 40px;
+      text-transform: uppercase;
+      text-align: center;
+      line-height: 1.2;
+      flex-grow: 1;
+    }
+    .menu {
+      position: absolute;
+      top: 60px;
+      left: 20px;
+      background-color: #444;
+      padding: 10px;
+      border-radius: 8px;
+    }
+
+    .menu a {
+      display: block;
+      color: white;
+      padding: 10px;
+      border-radius: 5px;
+    }
+
+    .menu a:hover {
+      background-color: #666;
+    }
+
+    h1, h2 {
+      margin: 20px;
+      font-size: 40px;
+      text-align: center;
+    }
+  
+
+    .section {
+      max-width: 800px;
+      margin: auto;
+      padding: 20px;
+    }
+
+    .video-container {
+      position: relative;
+      padding-bottom: 56.25%;
+      height: 0;
+      overflow: hidden;
+      border-radius: 10px;
+      margin-bottom: 15px;
+    }
+
+    .video-container iframe {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+    }
+
+    p {
+      font-size: 16px;
+      text-align: justify;
+      font-weight: bolder;
+    }
+
+  </style>
+</head>
+<body>
+
+  <div class="header">
+    <div class="menu-btn" id="menuBtn">&#9776;</div>
+
+    <div class="title">
+      CALL OF DUTY<br>
+      MOBILE
+    </div>
+
+    <div class="menu" id="menu">
+      <a href="index.html">home</a>
+      
+      <a href="aim.html">Tips & Advice</a>
+      
+      <a href="loadout.html">Loadout Suggestions</a>
+    </div>
+  </div>
+
+  <script>
+    const menuBtn = document.getElementById("menuBtn");
+    const menu = document.getElementById("menu");
+
+    menuBtn.addEventListener("click", function() {
+      if (menu.style.display === "block") {
+        menu.style.display = "none";
+      } else {
+        menu.style.display = "block";
+      }
+    });
+  </script>
+  
+    <div class="section">
+    <h1>Call of Duty Aim Tips</h1>
+    <div class="video-container">
+      <iframe src="https://www.youtube.com/embed/ypz_uQKtVtA" frameborder="0" allowfullscreen>
+      </iframe>
+    </div>
+    <p>
+      Start by adjusting your sensitivity until aiming feels smooth and controlled. Keep 
+      your crosshair at chest or head level so you’re ready when enemies appear. Control 
+      recoil by firing in short bursts or pulling down slightly while shooting. Practice 
+      tracking enemies smoothly instead of over-flicking. Lastly, warm up in training 
+      mode before matches to keep your aim sharp and consistent.
+    </p>
+  </div>
+
+  <div class="section">
+    <h2>Movement Tips</h2>
+    <div class="video-container">
+      <iframe src="https://www.youtube.com/embed/s7shahj4Fuo" 
+              frameborder="0" 
+              allowfullscreen>
+      </iframe>
+    </div>
+    <p>
+      First, avoid running in straight lines and strafe left or right to make yourself 
+      harder to hit. Use cover wisely by peeking, shooting, and quickly returning to 
+      safety instead of staying exposed. When entering a fight, slide to catch enemies 
+      off guard and break their aim. In close-range battles, add jumps or drop-shots to 
+      throw off enemy tracking. Finally, always mix up your movement by combining 
+      strafing, sliding, and jumping so your playstyle stays unpredictable.
+    </p>
+  </div>
+  
+
+</body>
+</html>
