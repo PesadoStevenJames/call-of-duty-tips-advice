@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Call of Duty</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #000;
+      color: #fff;
+      padding: 0;
+      background-image: url('/images (33).jpeg');
+      background-size: cover;
+      background-position: center;
+      height: 100vh;
+    }
+
+    .header {
+      background-color: #2b2b2b;
+      color: white;
+      padding: 20px;
+      display: flex;
+    }
+
+    .menu-btn {
+      font-size: 50px;
+      cursor: pointer;
+    }
+
+    .title {
+      font-weight: bold;
+      font-size: 40px;
+      text-align: center;
+      line-height: 1.2;
+      flex-grow: 1;
+    }
+
+    .menu {
+      position: absolute;
+      top: 60px;
+      left: 20px;
+      background-color: #444;
+      padding: 10px;
+      border-radius: 8px;
+    }
+
+    .menu a {
+      display: block;
+      color: white;
+      padding: 10px;
+      border-radius: 5px;
+    }
+
+    .menu a:hover {
+      background-color: #666;
+      
+    }
+
+    h1 {
+      font-size: 2.2rem;
+      margin: 20px;
+      text-align: center;
+    }
+
+    .loadout {
+      max-width: 900px;
+      margin: 30px auto;
+      padding: 20px;
+    }
+
+    .loadout img {
+      width: 100%;
+      max-width: 1000px;
+      border-radius: 10px;
+      margin-bottom: 15px;
+    }
+
+    .description {
+      font-size: 1rem;
+      line-height: 1.6;
+      margin-bottom: 20px;
+      text-align: left;
+      font-weight: bold;
+    }
+
+    footer {
+      background: white;
+      padding: 20px;
+      margin-top: 500px;
+      text-align: center;
+    }
+
+    footer p {
+      margin: 10px ;
+      font-size: 1rem;
+      color: black;
+    }
+
+    .social-icons {
+      margin-top: 10px;
+    }
+
+    .social-icons a {
+      margin: 10px;
+      display: inline-block;
+    }
+
+    .social-icons img {
+      width: 35px;
+      height: 35px;
+      color: black;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="header">
+    <div class="menu-btn" id="menuBtn">&#9776;</div>
+
+    <div class="title">
+      CALL OF DUTY<br>
+      MOBILE
+    </div>
+
+    <div class="menu" id="menu">
+      <a href="index.html">Home      </a>
+      <a href="aim.html">Tips & Advice</a>
+    </div>
+  </div>
+
+  <script>
+    const menuBtn = document.getElementById("menuBtn");
+    const menu = document.getElementById("menu");
+
+    menuBtn.
+    ("click", function() {
+      if (menu.style.display === "block")
+      } else {
+        menu.style.display = "block";
+      }
+    });
+  </script>
+  
+   <h1>Loadout Suggestions</h1>
+
+  <div class="loadout">
+    <img src="1758458287581.jpg" alt="KRM-262 Loadout">
+    <p class="description">
+      The KRM-262 with this setup is perfect for close-range dominance. 
+      The Marauder Suppressor and Extended Barrel boost range for consistent one-shots, 
+      while No Stock and the MIP Laser 5mW give faster ADS and hip-fire accuracy. 
+      Paired with Speed Up Kill, it’s built for aggressive rushing and chaining kills with ease.
+    </p>
+  </div>
+
+  <div class="loadout">
+    <img src="1758458273148.jpg" alt="BP50 Loadout">
+    <p class="description">
+      The BP50 build is perfect for aggressive play. The Maxim Silencer keeps you stealthy, 
+      the Rapid Barrel and Custom Stock boost mobility and accuracy, 
+      while the 80 Round Drums let you mow down enemies without frequent reloads. 
+      Paired with the Granular Grip, it’s a fast, stable, and deadly setup.
+    </p>
+  </div>
+
+  <footer>
+    <p><strong>Message me for more tips and advice</strong></p>
+    <p>If you would like more tips and advice, please message me on my social media accounts.</p>
+    <div class="social-icons">
+      <a href="https://www.instagram.com/yoshlies?igsh=MzNubDF0eGh0MzUw"><img src="1-14885_instagram-logo-transparent-instagram-logo-vector.png" alt="Instagram"></a>
+      <a href="https://www.facebook.com/share/1BSxy5va18/"><img src="2021_Facebook_icon.svg.png" alt="Facebook"></a>
+    </div>
+  </footer>
+
+
+</body>
